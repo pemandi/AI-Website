@@ -1,0 +1,189 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(90deg, #333, #555); /* Gradient background */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    animation: fadeInDown 2s; /* Animation effect */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Hover and transform effects */
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    transform: scale(1.1); /* Slight scaling effect on hover */
+}
+
+/* Section Styles */
+section {
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, background 0.3s ease; /* Add color transition */
+}
+
+section:hover {
+    transform: scale(1.02);
+    background: #f0f0f0; /* Change background color on hover */
+}
+
+section h2 {
+    color: #333;
+    border-bottom: 2px solid #f4f4f4;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    animation: fadeInLeft 1.5s; /* Animation effect */
+}
+
+section p {
+    text-align: justify;
+}
+
+section img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
+    transition: transform 0.3s ease; /* Image hover effect */
+}
+
+section img:hover {
+    transform: scale(1.05); /* Slight zoom effect on image hover */
+}
+
+/* Video Section Styles */
+#video-section {
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center; /* Center the content */
+}
+
+#video-section h2 {
+    color: #333;
+    border-bottom: 2px solid #f4f4f4;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.video-container {
+    max-width: 100%;
+    background: #000;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
+}
+
+video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+/* Scroll to Top Button */
+#scrollTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none; /* Hidden by default */
+    transition: background 0.3s ease, transform 0.3s ease; /* Add transition */
+}
+
+#scrollTopBtn:hover {
+    background: #555;
+    transform: scale(1.1); /* Slight scaling effect on hover */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: static;
+}
+
+footer .social-icons {
+    margin-top: 10px;
+}
+
+footer .social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: color 0.3s ease, transform 0.3s ease; /* Add transition */
+}
+
+footer .social-icons a:hover {
+    color: #007bff; /* Change color on hover */
+    transform: scale(1.1); /* Slight scaling effect on hover */
+}
+
+/* Keyframe Animations */
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
